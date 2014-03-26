@@ -1,15 +1,12 @@
 package org.meizhuo.mzoa.app.ui;
 
 import org.meizhuo.mzoa.app.R;
-import org.meizhuo.mzoa.app.R.layout;
-import org.meizhuo.mzoa.app.R.menu;
-
+import org.meizhuo.mzoa.app.utils.AndroidUtils;
 import android.os.Bundle;
-import android.app.ActionBar;
-import android.app.Activity;
-import android.view.Menu;
+import android.view.View;
 
 public class Main extends BaseActivity {
+	 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +18,27 @@ public class Main extends BaseActivity {
 
 	@Override
 	protected void initData() {
-
+		int width = AndroidUtils.getScreenSize(getContext())[0];
+	   debug("width = "+width);
 	}
 
 	@Override
 	protected void initLayout() {
-	
+		_getView(R.id.btn_more).setOnClickListener(this);
+	 
 	}
- 
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.btn_more:
+			toast("fuck!");
+			break;
+
+		default:
+			break;
+		}
+	}
+
+	 
 }

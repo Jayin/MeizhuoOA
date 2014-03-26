@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/LinearLayout.item_main" >
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_allmember"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="全站会员" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_allactivity"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="全站动态" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_communication"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="校友交流" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout.item_main" >
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_myspace"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="个人空间" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_activities"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="活    动" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_group"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="圈    子" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout.item_main" >
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_business"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="商务合作" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_message"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="消息中心" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_main_one_setting"
+            style="@style/RelativeLayout.frame_main_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.item_main"
+                    android:text="设    置" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
