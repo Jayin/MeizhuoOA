@@ -3,8 +3,22 @@
     <item
         android:id="@+id/action_more"
         android:icon="@drawable/ic_header_more"
-        android:orderInCategory="1"
         android:showAsAction="ifRoom"
-        android:title="更多"/>
+        android:title="发布">
+        <menu>
+            <item
+                android:id="@+id/action_send_task"
+                android:title="发布任务">
+            </item>
+            <item
+                android:id="@+id/action_send_communication"
+                android:title="发起讨论">
+            </item>
+            <item
+                android:id="@+id/action_create_schedule"
+                android:title="创建日程">
+            </item>
+        </menu>
+    </item>
 
 </menu>
