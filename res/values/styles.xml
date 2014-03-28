@@ -3,9 +3,11 @@
     <style name="AppBaseTheme" parent="android:Theme.Light"></style>
 
     <style name="AppTheme" parent="AppBaseTheme">
-        <item name="android:windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/Animations.activity</item>
         <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="AppStart" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
     </style>
 
     <style name="Animations" />
