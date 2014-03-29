@@ -55,7 +55,7 @@ public class Main extends BaseActivity {
 		mActionBar = getActionBar();
 		mActionBar.setDisplayHomeAsUpEnabled(true);
 		mActionBar.setHomeButtonEnabled(true);
-		mActionBar.setTitle(DafaultTitle);
+		setActionBarTitle(DafaultTitle);
 		manager.beginTransaction().add(R.id.container, new About(), "About")
 				.commit();
 		
@@ -69,6 +69,16 @@ public class Main extends BaseActivity {
 		getSupportFragmentManager().popBackStack();
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.container, fragment).commit();
+	}
+	
+	public void setActionBarTitle(String title){
+		mActionBar.setTitle(title);
+	}
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		mDrawerLayout.closeDrawers();
 	}
 
 	@Override

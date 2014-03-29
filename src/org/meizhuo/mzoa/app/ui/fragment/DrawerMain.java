@@ -1,14 +1,17 @@
 package org.meizhuo.mzoa.app.ui.fragment;
 
 import org.meizhuo.mzoa.app.R;
+import org.meizhuo.mzoa.app.ui.Login;
 import org.meizhuo.mzoa.app.ui.Main;
 import org.meizhuo.mzoa.app.ui.adapter.DrawerAdapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -35,6 +38,15 @@ public class DrawerMain extends Fragment {
 		View v = inflater.inflate(R.layout.fragment_drawermain, container,
 				false);
 		ListView lv = (ListView) v.findViewById(R.id.left_drawer);
+		View userinfo = v.findViewById(R.id.btn_userinfo);
+		userinfo.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				 startActivity(new Intent(mainActivity, Login.class));
+			}
+		});
+		
 		lv.setAdapter(new DrawerAdapter(mainActivity, menuName));
         lv.setOnItemClickListener(new DrawerItemClickListener());
 		return v;
