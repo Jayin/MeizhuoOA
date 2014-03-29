@@ -20,14 +20,19 @@
             android:theme="@style/AppStart" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="org.meizhuo.mzoa.app.ui.Main"
+            android:name=".ui.Main"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.Login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:label="@string/login" >
         </activity>
     </application>
 
