@@ -25,6 +25,7 @@ public class Login extends BaseActivity {
 	@Override
 	protected void initLayout() {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		 
 	}
 
 	@Override

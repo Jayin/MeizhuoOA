@@ -5,8 +5,9 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:windowAnimationStyle">@style/Animations.activity</item>
         <item name="android:windowBackground">@android:color/white</item>
-         <item name="android:displayOptions">showCustom</item>
+        <item name="android:displayOptions">showCustom</item>
     </style>
+
     <style name="AppStart" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
     </style>
